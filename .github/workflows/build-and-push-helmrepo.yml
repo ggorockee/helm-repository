@@ -41,7 +41,7 @@ on:
     branches: ["release"]
 
 env:
-  AZURE_CONTAINER_REGISTRY: "your-azure-container-registry"
+  SECRET: ${{secrets.GGOROCKEE_SECRET}}
   CONTAINER_NAME: "your-container-name"
   RESOURCE_GROUP: "your-resource-group"
   CLUSTER_NAME: "your-cluster-name"
@@ -54,6 +54,8 @@ jobs:
     steps:
       # Checks out the repository this file is in
       - uses: actions/checkout@v4
+        with:
+          token: ${{env.SECRET}}
         
 
       # Logs in with your Azure credentials
