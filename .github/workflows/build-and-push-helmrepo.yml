@@ -67,7 +67,7 @@ jobs:
         run: |
           helm repo index chart
           git add .
-          git commit -m "Helm Index update ${github.sha}"
+          git commit -m "Helm Index update"
           git push
 
       
