@@ -65,6 +65,13 @@ jobs:
           curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
           chmod 700 get_helm.sh
           ./get_helm.sh
+
+          git config user.name "ggorockee"
+          git config user.email "ggorockee@gmail.com"
+
+          git add .
+          git commit -m "ci bot"
+          git push origin main
       - run: ls -al
 
       - name: Make Helm Index file
