@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.12.3
-    created: "2024-09-12T04:25:57.443054953Z"
+    created: "2024-09-12T04:26:17.404941252Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -39,7 +39,7 @@ entries:
   gatewayset:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-09-12T04:25:57.443316353Z"
+    created: "2024-09-12T04:26:17.405204666Z"
     description: A Helm chart for Kubernetes
     digest: 4c1141cb4bd89addc4db9bdade3a127304970ad78c08ae03644d91f285782123
     name: gatewayset
@@ -50,7 +50,7 @@ entries:
   istio-ingressgateway:
   - apiVersion: v2
     appVersion: 1.23.1
-    created: "2024-09-12T04:25:57.447466015Z"
+    created: "2024-09-12T04:26:17.409442129Z"
     dependencies:
     - name: base
       repository: https://istio-release.storage.googleapis.com/charts
@@ -71,4 +71,4 @@ entries:
     urls:
     - istio-ingressgateway-1.23.1.tgz
     version: 1.23.1
-generated: "2024-09-12T04:25:57.433703612Z"
+generated: "2024-09-12T04:26:17.395356439Z"
