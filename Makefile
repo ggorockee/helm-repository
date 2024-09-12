@@ -17,6 +17,12 @@ git_action:
 	git config user.email "${GGOROCKEE_EMAIL}"
 	git config user.name "${GGOROCKEE_USERNAME}"
 	
+	@echo "[INFO] Initialize pull repository"
+	git pull origin release
+	@echo "[INFO] Checkout Branch to 'main'"
+	git checkout main
+	
+	
 
 # git cadd
 	git add .
