@@ -66,6 +66,7 @@ jobs:
       - name: Make Helm Index file
         run: |
           helm repo index chart
+          touch chart/abc.txt
           git add .
           git config --global user.email "ggorockee@gmail.com"
           git config --global user.name "ggorockee"
