@@ -54,6 +54,7 @@ jobs:
     steps:
       # Checks out the repository this file is in
       - uses: actions/checkout@v4
+        
 
       # Logs in with your Azure credentials
       - name: Helm install
@@ -65,6 +66,10 @@ jobs:
       - name: Make Helm Index file
         run: |
           helm repo index chart
-          touch chart/abc.txt
+          git add .
+          git config --global user.email "ggorockee@gmail.com"
+          git config --global user.name "ggorockee"
+          git commit -m "Helm Index update"
+          git push origin release
 
       
