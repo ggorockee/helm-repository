@@ -67,6 +67,8 @@ jobs:
         run: |
           helm repo index chart
           git add .
+          git config --global user.email "ggorockee@gmail.com"
+          git config --global user.name "ggorockee"
           git commit -m "Helm Index update"
           git push
 
