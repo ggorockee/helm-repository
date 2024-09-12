@@ -23,5 +23,8 @@ git_action:
 
 # git commit & push
 	git commit -m "Update index.yaml for Helm Repositoryimage tag to ${CURRENT_TIME}"
+
+	git remote remove origin
+	git remote add origin https://${GGOROCKEE_USERNAME}:${GGOROCKEE_SECRET}@github.com/ggorockee/helm-repository.git
 	git push origin main
 
