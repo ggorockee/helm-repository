@@ -69,14 +69,15 @@ jobs:
           git config user.name "ggorockee"
           git config user.email "ggorockee@gmail.com"
 
-          git add .
-          git commit -m "ci bot"
-          git push origin main
       - run: ls -al
 
       - name: Make Helm Index file
         run: |
           helm repo index chart
           touch chart/abc.txt
+
+          git add .
+          git commit -m "ci bot"
+          git push origin main
 
       
