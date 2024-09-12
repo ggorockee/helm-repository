@@ -58,8 +58,6 @@ jobs:
       # Logs in with your Azure credentials
       - name: Helm install
         run: |
-          apt update
-          apt install curl
           curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
           chmod 700 get_helm.sh
           ./get_helm.sh
@@ -67,5 +65,6 @@ jobs:
       - name: Make Helm Index file
         run: |
           helm repo index chart
+          touch chart/abc.txt
 
       
