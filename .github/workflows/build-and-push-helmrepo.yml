@@ -42,22 +42,19 @@ on:
 
 env:
   SECRET: ${{secrets.GGOROCKEE_SECRET}}
-  CONTAINER_NAME: "your-container-name"
-  RESOURCE_GROUP: "your-resource-group"
-  CLUSTER_NAME: "your-cluster-name"
-  CHART_PATH: "your-chart-path"
-  CHART_OVERRIDE_PATH: "your-chart-override-path"
-
+  EMAIL: ${{vars.GGOROCKEE_EMAIL}}
+  USERNAME: ${{vars.GGOROCKEE_USERNAME}}
 jobs:
   buildImage:
     runs-on: ubuntu-latest
     steps:
+      - name: Set current date as env variable
+        run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
       # Checks out the repository this file is in
       - uses: actions/checkout@v4
         with:
           token: ${{env.SECRET}}
           ref: main
-        
 
       # Logs in with your Azure credentials
       - name: Helm install
@@ -66,8 +63,8 @@ jobs:
           chmod 700 get_helm.sh
           ./get_helm.sh
 
-          git config user.name "ggorockee"
-          git config user.email "ggorockee@gmail.com"
+          git config user.name "${{env.USERNAME}}"
+          git config user.email "${{env.EMAIL}}"
 
       - run: ls -al
 
@@ -77,7 +74,9 @@ jobs:
           touch chart/abc.txt
 
           git add .
-          git commit -m "ci bot"
+          git commit -m "ci: Update index.yaml for Helm Repositoryimage tag to $NOW"
+          	
+
           git push origin main
 
       
