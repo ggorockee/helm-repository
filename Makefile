@@ -16,10 +16,12 @@ git_action:
 	@echo "[INFO] Git Configuration..."
 	git config user.email "${GGOROCKEE_EMAIL}"
 	git config user.name "${GGOROCKEE_USERNAME}"
+	
 
 # git cadd
 	git add .
 
-# git commit
+# git commit & push
 	git commit -m "Update index.yaml for Helm Repositoryimage tag to ${CURRENT_TIME}"
+	git push origin main
 
