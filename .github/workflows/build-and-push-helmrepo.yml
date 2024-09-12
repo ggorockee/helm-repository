@@ -37,8 +37,8 @@ name: Build and push an Helm repository
 # Helm
 
 on:
-  push: 
-    branches: ["main"]
+  pull_request: 
+    branches: ["release"]
 
 env:
   SECRET: ${{secrets.GGOROCKEE_SECRET}}
