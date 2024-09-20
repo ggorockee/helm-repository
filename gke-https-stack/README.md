@@ -6,6 +6,9 @@
 stack:
   - name: ggorockee
     sslPolicy: ggorockee
+    acme:
+      enable: true
+      domain: dev.ggorockee.com
     frontendSpec:
       redirectToHttps:
         enabled: true
@@ -23,6 +26,8 @@ stack:
 
 리스트 형태로 작성하며 frontendConfig와 BackendConfig의 `name`은 공유한다.  
 sslPolicy는 gcp 따로 만들어야한다.
+
+acme.enable이 true로 설정되어 있으면 해당 도메인으로 managed certificate를 만든다.
 
 
 리스트 형태로 작성
