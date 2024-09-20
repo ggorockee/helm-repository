@@ -37,5 +37,6 @@ acme.enable이 true로 설정되어 있으면 해당 도메인으로 managed cer
 
 History
 version 0.0.6: Bug fix
+version 0.0.7: ingress class 수정
 
 리스트 형태로 작성
