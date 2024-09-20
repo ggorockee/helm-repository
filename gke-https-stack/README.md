@@ -3,9 +3,11 @@
 이 차트는 gke에서 frontendconfig와 backendconfig를 사용하기 위해 제작함
 
 ```yaml
+managedCertificate:
+  enable: true
+
 stack:
   - name: ggorockee
-    namespace: namespace
     sslPolicy: ggorockee
     acme:
       enable: true
@@ -30,5 +32,6 @@ sslPolicy는 gcp 따로 만들어야한다.
 
 acme.enable이 true로 설정되어 있으면 해당 도메인으로 managed certificate를 만든다.
 
-
+* managedCertificate 추가  
+* ingress 추가  
 리스트 형태로 작성
