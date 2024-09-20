@@ -34,4 +34,8 @@ acme.enable이 true로 설정되어 있으면 해당 도메인으로 managed cer
 
 * managedCertificate 추가  
 * ingress 추가  
+
+History
+version 0.0.6: Bug fix
+
 리스트 형태로 작성
