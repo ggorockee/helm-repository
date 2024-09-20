@@ -32,6 +32,6 @@ sslPolicy는 gcp 따로 만들어야한다.
 
 acme.enable이 true로 설정되어 있으면 해당 도메인으로 managed certificate를 만든다.
 
-* managedCertificate 추가
-
+* managedCertificate 추가  
+* ingress 추가  
 리스트 형태로 작성
