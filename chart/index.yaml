@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.12.3
-    created: "2024-09-20T20:39:03.1541827+09:00"
+    created: "2024-09-20T21:07:44.7184371+09:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -39,7 +39,7 @@ entries:
   gatewayset:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-09-20T20:39:03.154245+09:00"
+    created: "2024-09-20T21:07:44.7194361+09:00"
     description: A Helm chart for Kubernetes
     digest: 4c1141cb4bd89addc4db9bdade3a127304970ad78c08ae03644d91f285782123
     name: gatewayset
@@ -49,8 +49,18 @@ entries:
     version: 0.1.0
   gke-https-stack:
   - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2024-09-20T21:07:44.7214458+09:00"
+    description: A Helm chart for Kubernetes
+    digest: d362a6e7323d6ede36523faadc17346e289c1ecabdfb58e1c74c6752053cae62
+    name: gke-https-stack
+    type: application
+    urls:
+    - gke-https-stack-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-09-20T20:39:03.1559595+09:00"
+    created: "2024-09-20T21:07:44.7194361+09:00"
     description: A Helm chart for Kubernetes
     digest: 4f8f81521113477e3c3df03b72a1619d54fa63b4f48ac7bf393069eaf53af8c3
     name: gke-https-stack
@@ -60,7 +70,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2024-09-20T20:39:03.155445+09:00"
+    created: "2024-09-20T21:07:44.7194361+09:00"
     description: A Helm chart for Kubernetes
     digest: b30d4f4d0ce58bef05bc8b955ed94b311692ce552e7bb06ce6728cd2373498e7
     name: gke-https-stack
@@ -71,7 +81,7 @@ entries:
   istio-ingressgateway:
   - apiVersion: v2
     appVersion: 1.23.1
-    created: "2024-09-20T20:39:03.1684977+09:00"
+    created: "2024-09-20T21:07:44.7314508+09:00"
     dependencies:
     - name: base
       repository: https://istio-release.storage.googleapis.com/charts
@@ -94,7 +104,7 @@ entries:
     version: 1.23.2
   - apiVersion: v2
     appVersion: 1.23.1
-    created: "2024-09-20T20:39:03.1626754+09:00"
+    created: "2024-09-20T21:07:44.725436+09:00"
     dependencies:
     - name: base
       repository: https://istio-release.storage.googleapis.com/charts
@@ -115,4 +125,4 @@ entries:
     urls:
     - istio-ingressgateway-1.23.1.tgz
     version: 1.23.1
-generated: "2024-09-20T20:39:03.1423055+09:00"
+generated: "2024-09-20T21:07:44.7070188+09:00"
