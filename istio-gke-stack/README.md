@@ -91,3 +91,10 @@ frontendConfig:
     redirectToHttps:
       enabled: true
 ```
+
+### Release
+* 1.0.3:  
+  * change ip_address namespace
+* 1.0.4: 
+  * delete ip address
+  * delete projectID
