@@ -72,4 +72,8 @@ gatewayset:
 ```
 
 ### Release
-* 1.0.3: ip_address namespace 변경
+* 1.0.3:  
+  * change ip_address namespace
+* 1.0.4: 
+  * delete ip address
+  * delete projectID

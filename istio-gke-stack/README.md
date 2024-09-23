@@ -1,8 +1,15 @@
 # Istio Gateway Helm Chart
 
-This chart installs an Istio gateway deployment.
+This chart installs an Istio gke stack.
+
+
 
 ## prerequisite
+```shell
+# create ip: gcp-service-mesh
+gcloud compute addresses create gcp-service-mesh --global
+```
+
 istio-version: `1.23`  
 backend-config name is `istio-ingress`
 ```yaml
