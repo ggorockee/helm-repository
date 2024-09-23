@@ -43,6 +43,7 @@ helm show values ggorockee/istio-gateway-stack
 ```yaml
 gatewayset:
   - name: bookinfo-gateway
+    namespace: bookinfo
     hosts:
       - "*"
 
