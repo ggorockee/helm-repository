@@ -57,7 +57,6 @@ helm show values ggorockee/istio-gke-stack
 ### Examples
 
 ```yaml
-projectId: "your_project_id"
 ip_address:
   - name: your_IP_address
     domains:
