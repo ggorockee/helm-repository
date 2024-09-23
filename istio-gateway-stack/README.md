@@ -27,7 +27,7 @@ helm install istio-gateway-stack ggorockee/istio-gateway-stack --namespace istio
 To uninstall/delete the `istio-gateway-stack` deployment:
 
 ```console
-helm delete istio-ingressgateway --namespace istio-system
+helm delete istio-gateway-stack --namespace istio-system
 ```
 
 ## Configuration
