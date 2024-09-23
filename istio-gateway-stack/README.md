@@ -70,3 +70,6 @@ gatewayset:
         - uri:
             prefix: /api/v1/products
 ```
+
+### Release
+* 1.0.3: ip_address namespace 변경
