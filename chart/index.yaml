@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.12.3
-    created: "2024-09-23T23:38:22.2558633+09:00"
+    created: "2024-10-16T10:45:48.43354+09:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -39,7 +39,7 @@ entries:
   gke-https-stack:
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2024-09-23T23:38:22.3246428+09:00"
+    created: "2024-10-16T10:45:48.435524+09:00"
     description: A Helm chart for Kubernetes
     digest: a362256bba14de5f81861de6e1cec5e291b09b76a266ba95900f153c5de0d8af
     name: gke-https-stack
@@ -49,7 +49,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2024-09-23T23:38:22.3135448+09:00"
+    created: "2024-10-16T10:45:48.435174+09:00"
     description: A Helm chart for Kubernetes
     digest: 2ca15901a1b05ac1e7cf4dc5f609a46bde1b74fb5e19ece95a4c5bcf0bad2cf4
     name: gke-https-stack
@@ -59,7 +59,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2024-09-23T23:38:22.3085818+09:00"
+    created: "2024-10-16T10:45:48.43493+09:00"
     description: A Helm chart for Kubernetes
     digest: 6836029069760bf02d905df7d98f313d8dfcd796e6072dc51c57aaeb76327cf5
     name: gke-https-stack
@@ -69,7 +69,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-09-23T23:38:22.3029237+09:00"
+    created: "2024-10-16T10:45:48.434729+09:00"
     description: A Helm chart for Kubernetes
     digest: 8d687eb4a4c9940970db8c6b8fe2e329945990e5603a2c1bd1b7f71c306c3b55
     name: gke-https-stack
@@ -79,7 +79,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2024-09-23T23:38:22.2860304+09:00"
+    created: "2024-10-16T10:45:48.434576+09:00"
     description: A Helm chart for Kubernetes
     digest: d362a6e7323d6ede36523faadc17346e289c1ecabdfb58e1c74c6752053cae62
     name: gke-https-stack
@@ -89,7 +89,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-09-23T23:38:22.2778773+09:00"
+    created: "2024-10-16T10:45:48.434226+09:00"
     description: A Helm chart for Kubernetes
     digest: 4f8f81521113477e3c3df03b72a1619d54fa63b4f48ac7bf393069eaf53af8c3
     name: gke-https-stack
@@ -99,7 +99,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2024-09-23T23:38:22.2624563+09:00"
+    created: "2024-10-16T10:45:48.433971+09:00"
     description: A Helm chart for Kubernetes
     digest: b30d4f4d0ce58bef05bc8b955ed94b311692ce552e7bb06ce6728cd2373498e7
     name: gke-https-stack
@@ -107,10 +107,21 @@ entries:
     urls:
     - gke-https-stack-0.0.1.tgz
     version: 0.0.1
+  istio-gateway:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-10-16T10:45:48.435632+09:00"
+    description: A Helm chart for istio-gateway
+    digest: 37a77a366c7d83c844e5cd1e660b18f47c8e69335e17bc0679ec0207e2b67ad6
+    name: istio-gateway
+    type: application
+    urls:
+    - istio-gateway-1.0.0.tgz
+    version: 1.0.0
   istio-gateway-stack:
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3268924+09:00"
+    created: "2024-10-16T10:45:48.436539+09:00"
     description: A Helm chart for istio
     digest: 62faeb76a7f144ea74ed47939d0341f4893bdb9db4a24a515f4f12b4a35a2bed
     name: istio-gateway-stack
@@ -120,7 +131,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3258279+09:00"
+    created: "2024-10-16T10:45:48.436339+09:00"
     description: A Helm chart for istio
     digest: e15c1b19e0e9689b456abda2cee8baaef6578b157505c91aeb1ea2393bf36839
     name: istio-gateway-stack
@@ -130,7 +141,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3251934+09:00"
+    created: "2024-10-16T10:45:48.436035+09:00"
     description: A Helm chart for istio
     digest: 07abe3fe8cb4c0b91ac8f85b83ec03117d843eed60185ea592df07d920c30f6e
     name: istio-gateway-stack
@@ -141,7 +152,7 @@ entries:
   istio-gke-stack:
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3300366+09:00"
+    created: "2024-10-16T10:45:48.438612+09:00"
     description: A Helm chart for GKE with istio
     digest: 5a6f8a3eded1d464fe8cb462e1dd5455545cfc374bed0833a7cbb2436c65dbb8
     name: istio-gke-stack
@@ -151,7 +162,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3295113+09:00"
+    created: "2024-10-16T10:45:48.438306+09:00"
     description: A Helm chart for GKE with istio
     digest: 53755fc8f1c80a28a0290f2833f789f60620942057fdeb51596fa4772b793623
     name: istio-gke-stack
@@ -161,7 +172,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3289881+09:00"
+    created: "2024-10-16T10:45:48.437939+09:00"
     description: A Helm chart for GKE with istio
     digest: b36a42c3e47dbb3d3d9981a0d35ae2f22e27fa7e6b59fab1fd1cf4f75ccdc6a0
     name: istio-gke-stack
@@ -171,7 +182,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3284655+09:00"
+    created: "2024-10-16T10:45:48.437629+09:00"
     description: A Helm chart for GKE with istio
     digest: 2e414caa8d61e36ddfd04226c644190e799fe8cb9e5761188c172571ceb8aa90
     name: istio-gke-stack
@@ -181,7 +192,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3279409+09:00"
+    created: "2024-10-16T10:45:48.437314+09:00"
     description: A Helm chart for GKE with istio
     digest: 26db4d1cc3bf31d3841d460c25df65dc599f4089b233a497d41b77ea60870026
     name: istio-gke-stack
@@ -191,7 +202,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.23.2
-    created: "2024-09-23T23:38:22.3274183+09:00"
+    created: "2024-10-16T10:45:48.437063+09:00"
     description: A Helm chart for GKE with istio
     digest: b12730eb2814f79a8b7192c2341599107475028d48bb1ad0ed107f6db65f8567
     name: istio-gke-stack
@@ -202,7 +213,7 @@ entries:
   istio-ingressgateway:
   - apiVersion: v2
     appVersion: 1.23.1
-    created: "2024-09-23T23:38:22.3812417+09:00"
+    created: "2024-10-16T10:45:48.448268+09:00"
     dependencies:
     - name: base
       repository: https://istio-release.storage.googleapis.com/charts
@@ -225,7 +236,7 @@ entries:
     version: 1.23.3
   - apiVersion: v2
     appVersion: 1.23.1
-    created: "2024-09-23T23:38:22.3544591+09:00"
+    created: "2024-10-16T10:45:48.445042+09:00"
     dependencies:
     - name: base
       repository: https://istio-release.storage.googleapis.com/charts
@@ -248,7 +259,7 @@ entries:
     version: 1.23.2
   - apiVersion: v2
     appVersion: 1.23.1
-    created: "2024-09-23T23:38:22.3435438+09:00"
+    created: "2024-10-16T10:45:48.442068+09:00"
     dependencies:
     - name: base
       repository: https://istio-release.storage.googleapis.com/charts
@@ -269,4 +280,4 @@ entries:
     urls:
     - istio-ingressgateway-1.23.1.tgz
     version: 1.23.1
-generated: "2024-09-23T23:38:22.2235283+09:00"
+generated: "2024-10-16T10:45:48.424376+09:00"
