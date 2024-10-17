@@ -2,104 +2,117 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Windows-8-like Animations with CSS3 and jQuery</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://sarasoueidan.com/demos/windows8-animations/css/demo-styles.css'><link rel="stylesheet" href="./style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <title>CodePen - Dashboard UI </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="demo-wrapper">
-<!-- classnames for the pages should include: 1) type of page 2) page name-->
-  <div class="s-page random-restored-page">
-    <div class="page-content">
-    <h2 class="page-title">Some minimized App</h2>
-    </div>
-    <div class="close-button s-close-button">x</div>   
-  </div>
-  <div class="s-page custom-page">
-    <div class="page-content">
-    <h2 class="page-title">Thank You!</h2>
-    </div>
-    <div class="close-button s-close-button">x</div>
-  </div>
-  <div class="r-page random-r-page">
-    <div class="page-content">
-    <h2 class="page-title">App Screen</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae a nesciunt hic animi iure laborum vitae maiores blanditiis non voluptate similique vel earum cumque nostrum voluptas illo minus alias fugiat.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aliquid distinctio eum neque provident doloremque nostrum totam assumenda repellat repudiandae perferendis facilis voluptatem praesentium dignissimos impedit cumque tempore id quaerat.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sint officia deleniti omnis asperiores nihil voluptatem maxime labore inventore consequatur ipsa nobis officiis laudantium cum provident quo tempore temporibus corporis.</p>
-    </div>
-    <div class="close-button r-close-button">x</div>
-  </div>
-<!--each tile should specify what page type it opens (to determine which animation) and the corresponding page name it should open-->
-  <div class="dashboard clearfix">
-    <ul class="tiles">
-      <div class="col1 clearfix">
-        <li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
-          <div><p>This tile's content slides up</p></div>
-          <div><p>View all tasks</p></div>
-        </li>
-        <li class="tile tile-small tile tile-2 slideTextRight" data-page-type="s-page" data-page-name ="random-restored-page">
-          <div><p class="icon-arrow-right"></p></div>
-          <div><p>Tile's content slides right. Page opens from left</p></div>
-        </li>
-        <li class="tile tile-small last tile-3" data-page-type="r-page" data-page-name="random-r-page">
-          <p class="icon-calendar-alt-fill"></p>
-        </li>
-        <li class="tile tile-big tile-4 fig-tile" data-page-type="r-page" data-page-name="random-r-page">
-          <figure>
-            <img src="https://sarasoueidan.com/demos/windows8-animations/images/blue.jpg" />
-            <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
-          </figure>
-        </li>
-      </div>
-
-      <div class="col2 clearfix">
-        <li class="tile tile-big tile-5" data-page-type="r-page" data-page-name="random-r-page">
-          <div><p><span class="icon-cloudy"></span>Weather</p></div>
-        </li>
-        <li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="random-r-page">
-          <div><p><span class="icon-skype"></span>Skype</p></div>
-          <div><p>Make a Call</p></div>
-        </li>
-        <!--Tiles with a 3D effect should have the following structure:
-            1) a container inside the tile with class of .faces
-            2) 2 figure elements, one with class .front and the other with class .back-->
-        <li class="tile tile-small tile-7 rotate3d rotate3dX" data-page-type="r-page" data-page-name="random-r-page">
-          <div class="faces">
-            <div class="front"><span class="icon-picassa"></span></div>
-            <div class="back"><p>Launch Picassa</p></div>
-          </div>
-        </li>
-        <li class="tile tile-small last tile-8 rotate3d rotate3dY" data-page-type="r-page" data-page-name="random-r-page">
-          <div class="faces">
-            <div class="front"><span class="icon-instagram"></span></div>
-            <div class="back"><p>Launch Instagram</p></div>
-          </div>
-        </li>
-      </div>
-
-      <div class="col3 clearfix">      
-        <li class="tile tile-2xbig tile-9 fig-tile" data-page-type="custom-page" data-page-name="random-r-page">
-          <figure>
-            <img src="https://sarasoueidan.com/demos/windows8-animations/images/summer.jpg" />
-            <figcaption class="tile-caption caption-bottom">Fixed Caption: Some Subtitle or Tile Description Goes Here with some kinda link or anything
-            </figure>
-        </li>
-        <li class="tile tile-big tile-10" data-page-type="s-page" data-page-name="custom-page">
-          <div><p>Windows-8-like Animations with CSS3 &amp; jQuery &copy; Sara Soueidan. Licensed under MIT.</p></div>
-        </li>
-      </div>
-    </ul>
-  </div><!--end dashboard-->
-
-</div>
+<main class="main">
+	<div class="responsive-wrapper">
+		<div class="main-header">
+			<h1>ggorockee helm repository</h1>
+			<!-- <div class="search">
+				<input type="text" placeholder="Search" />
+				<button type="submit">
+					<i class="ph-magnifying-glass-bold"></i>
+				</button>
+			</div> -->
+		</div>
+		<div class="horizontal-tabs">
+			<!-- <a href="#">My details</a>
+			<a href="#">Profile</a>
+			<a href="#">Password</a>
+			<a href="#">Team</a>
+			<a href="#">Plan</a>
+			<a href="#">Billing</a>
+			<a href="#">Email</a>
+			<a href="#">Notifications</a> -->
+			<a href="#" class="active">helm chart</a>
+			<!-- <a href="#">API</a> -->
+		</div>
+		<div class="content-header">
+			<div class="content-header-intro">
+				<h2>To install the helm repository, the helm must be at least 3.0 installed.</h2>
+				<h2>Then use the following command</h2>
+				<br/>
+				<p> $ helm repo add ggorockee https://ggorockee.github.io/helm-repository/chart<br/>
+					$ helm repo update
+				</p>
+				
+			</div>
+			<!-- <div class="content-header-actions">
+				<a href="#" class="button">
+					<i class="ph-faders-bold"></i>
+					<span>Filters</span>
+				</a>
+				<a href="#" class="button">
+					<i class="ph-plus-bold"></i>
+					<span>Request integration</span>
+				</a>
+			</div> -->
+		</div>
+		<div class="content">
+			<div class="content-panel">
+				<div class="vertical-tabs">
+					<a href="#" class="active">View all</a>
+					<!-- <a href="#">Developer tools</a>
+					<a href="#">Communication</a>
+					<a href="#">Productivity</a>
+					<a href="#">Browser tools</a>
+					<a href="#">Marketplace</a> -->
+				</div>
+			</div>
+			<div class="content-main">
+				<div class="card-grid">
+					<!-- card 1 start -->
+					<article class="card">
+						<div class="card-header">
+							<div>
+								<span><img src="./assets/image/istio/svg/istio-icon-color.svg" /></span>
+								<h3>istio-gateway</h3>
+							</div>
+							<!-- <label class="toggle">
+								<input type="checkbox" checked>
+								<span></span>
+							</label> -->
+						</div>
+						<div class="card-body">
+							<p>for virtualService & gateway of istio.</p>
+							<b>istio installation must be preceded</b>
+						</div>
+						<div class="card-footer">
+							<a href="https://ggorockee.github.io/helm-repository/istio-gateway">View integration</a>
+						</div>
+					</article>
+					<!-- card 1 end -->
+					<!-- card 2 start -->
+					<article class="card">
+						<div class="card-header">
+							<div>
+								<span><img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" /></span>
+								<h3>3 tier django application</h3>
+							</div>
+							<!-- <label class="toggle">
+								<input type="checkbox" checked>
+								<span></span>
+							</label> -->
+						</div>
+						<div class="card-body">
+							<p>3-tier application using django backend and using postgresql and using nginx</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://ggorockee.github.io/helm-repository/3-tier-django-app">View integration</a>
+						</div>
+					</article>
+					<!-- card 2 end -->
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
 <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://sarasoueidan.com/demos/windows8-animations/js/scripts.js'></script>
+  <script src='https://unpkg.com/phosphor-icons'></script><script  src="./assets/js/script.js"></script>
+
 </body>
 </html>
