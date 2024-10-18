@@ -3,7 +3,7 @@ entries:
   istio-gateway:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-10-18T01:37:55.989816979Z"
+    created: "2024-10-18T04:22:59.34308418Z"
     description: A Helm chart for istio-gateway
     digest: 37a77a366c7d83c844e5cd1e660b18f47c8e69335e17bc0679ec0207e2b67ad6
     name: istio-gateway
@@ -14,7 +14,17 @@ entries:
   restframework:
   - apiVersion: v2
     appVersion: 5.1.2
-    created: "2024-10-18T01:37:55.991414865Z"
+    created: "2024-10-18T04:22:59.345165125Z"
+    description: A Helm chart for Kubernetes
+    digest: 7ba6cf3cd8ca7af02056087a375f97d30320b788d507f79ff59531bb33e7ce05
+    name: restframework
+    type: application
+    urls:
+    - restframework-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 5.1.2
+    created: "2024-10-18T04:22:59.344165283Z"
     description: A Helm chart for Kubernetes
     digest: 056c03f4e5b4fbea6a4b149ff87e7f46047d4585b3f85e1ef098cbf728c0af54
     name: restframework
@@ -22,4 +32,4 @@ entries:
     urls:
     - restframework-1.0.1.tgz
     version: 1.0.1
-generated: "2024-10-18T01:37:55.98860252Z"
+generated: "2024-10-18T04:22:59.342484412Z"
