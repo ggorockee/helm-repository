@@ -3,7 +3,17 @@ entries:
   camping-backend-with-go:
   - apiVersion: v2
     appVersion: 1.22.5
-    created: "2024-10-22T13:58:12.915148+09:00"
+    created: "2024-10-22T14:12:50.026847+09:00"
+    description: A Helm chart for camping backend
+    digest: 9d32ebe6ca4104e646a6654fe62c3a1314b9e79fb2fd5ef5dd25b610b00a85e3
+    name: camping-backend-with-go
+    type: application
+    urls:
+    - camping-backend-with-go-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.22.5
+    created: "2024-10-22T14:12:50.02653+09:00"
     description: A Helm chart for camping backend
     digest: 6cbde70eac4f4fffb08664fbe5818de7b3fdb70879f8eb534d80ee1bdb9495bd
     name: camping-backend-with-go
@@ -14,7 +24,7 @@ entries:
   istio-gateway:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-10-22T13:58:12.915503+09:00"
+    created: "2024-10-22T14:12:50.027225+09:00"
     description: A Helm chart for istio-gateway
     digest: 37a77a366c7d83c844e5cd1e660b18f47c8e69335e17bc0679ec0207e2b67ad6
     name: istio-gateway
@@ -25,7 +35,7 @@ entries:
   restframework:
   - apiVersion: v2
     appVersion: 5.1.2
-    created: "2024-10-22T13:58:12.916297+09:00"
+    created: "2024-10-22T14:12:50.028301+09:00"
     description: A Helm chart for Kubernetes
     digest: 7ba6cf3cd8ca7af02056087a375f97d30320b788d507f79ff59531bb33e7ce05
     name: restframework
@@ -35,7 +45,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 5.1.2
-    created: "2024-10-22T13:58:12.915906+09:00"
+    created: "2024-10-22T14:12:50.027751+09:00"
     description: A Helm chart for Kubernetes
     digest: 056c03f4e5b4fbea6a4b149ff87e7f46047d4585b3f85e1ef098cbf728c0af54
     name: restframework
@@ -43,4 +53,4 @@ entries:
     urls:
     - restframework-1.0.1.tgz
     version: 1.0.1
-generated: "2024-10-22T13:58:12.914527+09:00"
+generated: "2024-10-22T14:12:50.02582+09:00"
