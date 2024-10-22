@@ -3,7 +3,17 @@ entries:
   camping-backend-with-go:
   - apiVersion: v2
     appVersion: 1.22.5
-    created: "2024-10-22T15:45:59.282279+09:00"
+    created: "2024-10-22T16:00:50.654882+09:00"
+    description: A Helm chart for camping backend
+    digest: 2c80fa61eebac41e73b8b1f480835002c73b4dd6a2da8f8ebf4cb02a8cd6cd32
+    name: camping-backend-with-go
+    type: application
+    urls:
+    - camping-backend-with-go-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 1.22.5
+    created: "2024-10-22T16:00:50.654586+09:00"
     description: A Helm chart for camping backend
     digest: 81a9bf0920f5446c0052dfa3fd2dc8673370a780e997c268ab3adf79acfaba7d
     name: camping-backend-with-go
@@ -13,7 +23,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.22.5
-    created: "2024-10-22T15:45:59.282076+09:00"
+    created: "2024-10-22T16:00:50.654128+09:00"
     description: A Helm chart for camping backend
     digest: 257aadf97ee03821dafda5a8c9ebd20d7d8581aee9b253eb0f6cea044989f9ca
     name: camping-backend-with-go
@@ -23,7 +33,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.22.5
-    created: "2024-10-22T15:45:59.281773+09:00"
+    created: "2024-10-22T16:00:50.653749+09:00"
     description: A Helm chart for camping backend
     digest: 40bf6720f88ca22b3658013e8a5fba1dafe3a5de4bb38fcdba5dee63906512d7
     name: camping-backend-with-go
@@ -33,7 +43,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.22.5
-    created: "2024-10-22T15:45:59.281389+09:00"
+    created: "2024-10-22T16:00:50.653386+09:00"
     description: A Helm chart for camping backend
     digest: 9d32ebe6ca4104e646a6654fe62c3a1314b9e79fb2fd5ef5dd25b610b00a85e3
     name: camping-backend-with-go
@@ -43,7 +53,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.22.5
-    created: "2024-10-22T15:45:59.280995+09:00"
+    created: "2024-10-22T16:00:50.652929+09:00"
     description: A Helm chart for camping backend
     digest: 6cbde70eac4f4fffb08664fbe5818de7b3fdb70879f8eb534d80ee1bdb9495bd
     name: camping-backend-with-go
@@ -54,7 +64,7 @@ entries:
   istio-gateway:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-10-22T15:45:59.282679+09:00"
+    created: "2024-10-22T16:00:50.65521+09:00"
     description: A Helm chart for istio-gateway
     digest: 37a77a366c7d83c844e5cd1e660b18f47c8e69335e17bc0679ec0207e2b67ad6
     name: istio-gateway
@@ -65,7 +75,7 @@ entries:
   restframework:
   - apiVersion: v2
     appVersion: 5.1.2
-    created: "2024-10-22T15:45:59.284085+09:00"
+    created: "2024-10-22T16:00:50.656276+09:00"
     description: A Helm chart for Kubernetes
     digest: 7ba6cf3cd8ca7af02056087a375f97d30320b788d507f79ff59531bb33e7ce05
     name: restframework
@@ -75,7 +85,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 5.1.2
-    created: "2024-10-22T15:45:59.28319+09:00"
+    created: "2024-10-22T16:00:50.655723+09:00"
     description: A Helm chart for Kubernetes
     digest: 056c03f4e5b4fbea6a4b149ff87e7f46047d4585b3f85e1ef098cbf728c0af54
     name: restframework
@@ -83,4 +93,4 @@ entries:
     urls:
     - restframework-1.0.1.tgz
     version: 1.0.1
-generated: "2024-10-22T15:45:59.280233+09:00"
+generated: "2024-10-22T16:00:50.652211+09:00"
